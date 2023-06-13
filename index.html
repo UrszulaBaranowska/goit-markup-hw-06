@@ -421,15 +421,23 @@
             </li>
         </ul>
         </div>
-        <div class="footer-newsletter">
-          <form>
+        <div>
+          <h5 class="footer-title-2">ZAPISZ SIĘ DO NEWSLETTERA</h5>
+          <div class="signup-newsletter">
+            <form>
             <label>
-              <h5 class="footer-title-2">ZAPISZ SIĘ DO NEWSLETTERA</h5><br>
-              <input type="email" name="email" placeholder="E-mail" class="newsletter-mail"/>
+              <input 
+              type="email" 
+              name="signup-email" 
+              placeholder="E-mail" 
+              class="newsletter-mail"/>
             </label>
-            <button type="submit" class="newsletter-button">Zapisz się<svg class="news-butt-icon" width="24" height="24"><use href="./images/icons.svg#icon-send"></use>
+            <button type="submit" class="newsletter-button">
+              Zapisz się
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-person-black-2"></use>
             </svg></button>
-  </form>
+          </form>
         </div>
       </div>
     </footer>
@@ -461,6 +469,31 @@
         stroke-width="2"
       />
       </svg></button>
-    <script src="./js/modal.js"></script>
+      <form>
+        <h3 class="form-title"> Zostaw swoje dane w formularzu poniżej</h3>
+<div class="username">
+  <label class="form-label-order" for="username">
+    Imię
+    <input type="text" name="username" class="form-input-order"/>
+  </label>
+</div>
+<div class="phone-number">
+  <label class="form-label-order" for="phone-number">
+    Telefon
+    <input type="tel" name="phone" id="user-phone" class="form-input-order"/>
+  </label>
+</div>
+<div class="email-addres">
+  <label class="form-label-order" for="email-addres">
+    Email
+    <input type="tel" name="email" id="mail" class="form-input-order"/>
+  </label>
+</div>
+<div class="comment">
+  <label class="text-label-order" for="user-comment">
+    Komenatrz
+    <textarea name="feedback" rows="5" placeholder="Wprowadź tekst" class="form-textarea"></textarea>
+  </label>
+</div>
   </body>
 </html>
