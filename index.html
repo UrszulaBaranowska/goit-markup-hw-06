@@ -425,10 +425,11 @@
           <h5 class="footer-title-2">ZAPISZ SIĘ DO NEWSLETTERA</h5>
           <div class="signup-newsletter">
             <form>
-            <label>
+            <label for="newsletter">
               <input 
               type="email" 
-              name="signup-email" 
+              name="signup-email"
+              id="newsletter" 
               placeholder="E-mail" 
               class="newsletter-mail"/>
             </label>
@@ -474,32 +475,33 @@
 <div class="username">
   <label class="form-label-order" for="username">
     Imię
-    <input type="text" name="username" required class="form-input-order"/>
+    <input type="text" name="username" id="username" required class="form-input-order"/>
   </label>
 </div>
 <div class="phone-number">
-  <label class="form-label-order" for="phone-number">
+  <label class="form-label-order" for="phone">
     Telefon
-    <input type="tel" name="phone" id="user-phone" required class="form-input-order"/>
+    <input type="tel" name="phone" id="phone" required class="form-input-order"/>
   </label>
 </div>
 <div class="email-addres">
-  <label class="form-label-order" for="email-addres">
+  <label class="form-label-order" for="mail">
     Email
-    <input type="tel" name="email" id="mail" required class="form-input-order"/>
+    <input type="email" name="email" id="mail" required class="form-input-order"/>
   </label>
 </div>
 <div class="comment">
-  <label class="text-label-order form-label-order" required for="user-comment">
+  <label class="text-label-order form-label-order" required for="comment">
     Komenatrz
-    <textarea name="feedback" rows="5" placeholder="Wprowadź tekst" class="form-textarea"></textarea>
+    <textarea name="feedback" id="comment" rows="5" placeholder="Wprowadź tekst" class="form-textarea"></textarea>
   </label>
   </div>
-  <label class="acceptance-label">
+  <label class="acceptance-label" for="acceptance">
     <input
       class="checkbox-hidden"
       type="checkbox"
       name="acceptance"
+      id="acceptance"
       required
     />
     <svg class="checkbox-icon-unchecked" width="16" height="15">
