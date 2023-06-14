@@ -495,12 +495,21 @@
     <textarea name="feedback" rows="5" placeholder="Wprowadź tekst" class="form-textarea"></textarea>
   </label>
   </div>
-  <div class="input-checkbox">
-    <label class="checkbox-policy">
-        <input type="checkbox" name="checkbox" value="" checked class="checkbox-size" required/>
-        <div class="checkbox-text">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności.</a></div>
-    </label> 
+  <label class="acceptance-label" for="user-acceptance">
+    <input
+      class="acceptance-input checkbox-hidden"
+      type="checkbox"
+      name="acceptance"
+      id="user-acceptance"
+    />
+    <div class="acceptance-checked">
+      <svg class="checked-background" width="16" height="15">
+        <use href="images/icons.svg#icon-checkbox-bird"></use>
+      </svg>
     </div>
+    Oświadczam iż akceptuję <a href="">Regulamin</a> i
+    <a href="">Politykę Prywatności</a>.
+  </label>
   <button type="submit" class="form-button">Wyślij</button>
 </div>
 <script src="./js/modal.js"></script>
